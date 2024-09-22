@@ -1,0 +1,10 @@
+Ejercicio 1-C: La diferencia es que uno me imprime como yo lo declaro y la otra es que el toString me imprime la referencia de la instancia
+Ejercicio 1-D: El metodo para comparacion por contenido es .equals() el cual debe sobreescribirse en la clase para comparar por contenido
+Ejercicio 1-E: CLASSPATH le dice a Java dónde encontrar las clases, paquetes y bibliotecas externas necesarias para compilar y ejecutar un programa.
+Ejercicio 1-F: En el archivo MANIFIES.MF
+
+Ejercicio 2-A: Es valido el acceso de la clase Gamma ya que el dato y el metodo son de acceso Protected, por lo cual se puede acceder si pertenecen al misma paquete o si heredan la clase que lo declara
+Ejercicio 2-B: Si es valido porque el especificador de acceso es public por lo cual todos pueden acceder a el
+Ejercicio 2-C: No es valido porque al no tener especificador de acceso explicito, se le agrega implicitamente uno de tipo default package, osea que solo sera accesible dentro del mismo paquete, no por fuera, por mas que se herede la clase
+Ejercicio 2-D: No es valido porque solo se puede acceder desde el mismo paquete, no de otro, no importa que herede
+Ejercicio 2-E: Algunas si son validas y otras no, d.x=10 y d.otroMetodoA() si son VALIDAS, pero a.x=10 y a.otroMetodoA() NO SON VALIDAS, esto porque delta es instancia de la superclase Alpha por lo cual la hereda, en cambio a.x y a.otroMetodoA no, y al no estar en la misma clase no se puede hacer
