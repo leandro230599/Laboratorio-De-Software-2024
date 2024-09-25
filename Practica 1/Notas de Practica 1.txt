@@ -8,3 +8,6 @@ Ejercicio 2-B: Si es valido porque el especificador de acceso es public por lo c
 Ejercicio 2-C: No es valido porque al no tener especificador de acceso explicito, se le agrega implicitamente uno de tipo default package, osea que solo sera accesible dentro del mismo paquete, no por fuera, por mas que se herede la clase
 Ejercicio 2-D: No es valido porque solo se puede acceder desde el mismo paquete, no de otro, no importa que herede
 Ejercicio 2-E: Algunas si son validas y otras no, d.x=10 y d.otroMetodoA() si son VALIDAS, pero a.x=10 y a.otroMetodoA() NO SON VALIDAS, esto porque delta es instancia de la superclase Alpha por lo cual la hereda, en cambio a.x y a.otroMetodoA no, y al no estar en la misma clase no se puede hacer
+
+Ejercicio 3-3: CONSTRUCTOR PRIVADO: No, no es correcto dado a que el constructor de la superclase es privado por lo cual la subclase no podra invocarlo y dara error
+               CONSTRUCTOR PROTEGIDO: No, no es valido porque OtraClase invoca a SuperClase que tiene constructor protegido y OtraClase no esta en el mismo paquete, ni es hija

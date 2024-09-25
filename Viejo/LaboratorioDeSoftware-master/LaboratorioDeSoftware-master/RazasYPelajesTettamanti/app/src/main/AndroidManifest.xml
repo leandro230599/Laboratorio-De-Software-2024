@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.santi.razasypelajestettamanti">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".RazasYPelajes"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Preferences"
+            android:parentActivityName=".RazasYPelajes"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".RazasyPelajesPalabraImagen"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".RazasyPelajesImagenPalabra"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".CruzasImagenImagen"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Reconocimiento"
+            android:label="@string/title_activity_reconocimiento"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Campeon"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

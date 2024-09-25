@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory
+        android:textAppearance="@color/colorAccent"
+        android:theme="?android:attr/preferenceStyle"
+        android:title="Modo Reconocimiento">
+
+        <ListPreference
+            android:enabled="true"
+            android:entries="@array/formatoReconocimiento"
+            android:entryValues="@array/formatoReconocimiento"
+            android:key="list_formato_reconocimiento"
+            android:persistent="true"
+            android:summary="%s"
+            android:title="Seleccione el formato de reconocimiento" />
+
+        <MultiSelectListPreference
+            android:entries="@array/modosReconocimiento"
+            android:entryValues="@array/modosReconocimiento"
+            android:key="multi_select_modo_reconocimiento"
+            android:persistent="true"
+            android:selectable="true"
+            android:title="Seleccione el modo de reconocimiento" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:textAppearance="@color/colorAccent"
+        android:title="Mini Juego">
+
+        <ListPreference
+            android:enabled="true"
+            android:entries="@array/miniJuegos"
+            android:entryValues="@array/miniJuegos"
+            android:key="list_mini_juego"
+            android:persistent="true"
+            android:summary="%s"
+            android:title="Seleccione el formato de mini juego" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:textAppearance="@color/colorAccent"
+        android:title="Ajustes">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_nivel"
+            android:persistent="true"
+            android:summary="Desactivado - Facil / Activado - Dificil "
+            android:summaryOff="Facil"
+            android:summaryOn="Dificil"
+            android:switchTextAppearance="@color/colorAccent"
+            android:switchTextOff="Facil"
+            android:switchTextOn="Dificil"
+            android:textStyle="bold"
+            android:title="Seleccione nivel" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_voz"
+            android:persistent="true"
+            android:summary="Desactivado - Masculina / Activado - Femenina"
+            android:summaryOff="Masculina"
+            android:summaryOn="Femenina"
+            android:switchTextOff="Masculina"
+            android:switchTextOn="Femenina"
+            android:title="Seleccione tipo de voz" />
+    </PreferenceCategory>
+</PreferenceScreen>
